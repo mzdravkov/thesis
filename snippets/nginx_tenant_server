@@ -1,0 +1,8 @@
+server {
+  listen 80;
+  server_name tenant.videira.com;
+  location ~ ^/(/.*|$) {
+    proxy_pass http://videira.com:43697/$1;
+    resolver 8.8.8.8;
+  }
+}
