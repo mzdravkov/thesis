@@ -1,0 +1,12 @@
+name:
+  type: string
+  category: main
+  value: site
+posts_per_page:
+  type: int
+  category: appearence
+  value: 42
+underline_links_on_hover:
+  type: bool
+  category: appearence
+  value: true
