@@ -4,4 +4,3 @@ server {
   passenger_enabled  on;
   root               /path/videira/public;
 }
-
