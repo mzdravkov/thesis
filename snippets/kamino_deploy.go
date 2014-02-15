@@ -20,7 +20,10 @@ func Deploy(name string, port uint16) (err error) {
 		addServer(locationOpts, serverOpts)
 	}
 	reload := "sudo " + Config["nginx_bin"] + " -s reload"
-	nginxReload := exec.Command("sh", "-c", reloadCmd)
+	nginxReload := exec.Command("sh", "-c", reload)
 	err = nginxReload.Run()
 	return
 }
+
+
+
